@@ -22,7 +22,7 @@ stages {
     stage('Create API') {
         steps {
             sh 'ls -l'
-            sh '@deploy2.sh'
+            sh './deploy2.sh'
         }
     }
   
