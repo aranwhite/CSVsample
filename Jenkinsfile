@@ -21,7 +21,7 @@ stages {
     } 
     stage('Copy CSV to LAC') {
         steps {
-            sh '/usr/bin/docker cp ./input.csv csvexample_lac_1:/input.csv
+            sh '/usr/bin/docker cp ./input.csv csvexample_lac_1:/input.csv'
         }
     } 
     
