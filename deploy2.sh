@@ -11,4 +11,4 @@ projectID=$(curl -i --header "Content-Type: application/json" --header "Authoriz
 echo projectID: $projectID
  
 
-curl -i --header "Content-Type:application/json" --header "Authorization:CALiveAPICreator "${apiKey}":1" --data \{\"name\":\"CustomerDataSource\",\"role_strategy\":\"\simplicity\",\"schema_editable\":false,\"active\":true,\"project_ident\":"${projectID}",\"dbasetype_ident\":23,\"comments\":\"Created\ using\ Connect\ Wizard\",\"url\":\"jdbc\:csv:Data\ Source=/tmp/\;Include\ Files=.csv\;Extended\ Properties=LineEnding=LF\;HDR=Yes\;FMT=CSVDelimited\"\} http://34.210.71.26:8081/rest/abl/admin/v2/DbSchemas -v
+curl -i --header "Content-Type:application/json" --header "Authorization:CALiveAPICreator "${apiKey}":1" --data \{\"name\":\"CustomerDataSource\",\"role_strategy\":\"\simplicity\",\"schema_editable\":false,\"active\":true,\"project_ident\":"${projectID}",\"dbasetype_ident\":23,\"comments\":\"Created\ using\ Connect\ Wizard\",\"url\":\"jdbc\:csv:Data\ Source=/\;Include\ Files=.csv\;Extended\ Properties=LineEnding=LF\;HDR=Yes\;FMT=CSVDelimited\"\} http://34.210.71.26:8081/rest/abl/admin/v2/DbSchemas -v
