@@ -21,7 +21,7 @@ stages {
     } 
     stage('Create API') {
         steps {
-            sh ('deploy.sh')
+            sh ('deploy2.sh')
         }
     }
   
