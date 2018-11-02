@@ -6,7 +6,7 @@ stages {
             checkout scm
         }
     }
-    stage ('List) {
+    stage ('List') {
            steps {
             sh 'ls -l'
            }
